@@ -2,7 +2,29 @@
   "meta": {
     "title": "Rohit Karthik | Portfolio",
     "path": "~/portfolio",
-    "branch": "main"
+    "branch": "main",
+    "description": "ML Researcher, Entrepreneur, and High School Student. Building ML inference systems, founding EdTech startups, and conducting cutting-edge machine learning research.",
+    "keywords": [
+      "Rohit Karthik",
+      "Machine Learning",
+      "ML Research",
+      "Deep Learning",
+      "Entrepreneurship",
+      "EdTech",
+      "Python",
+      "TypeScript",
+      "PyTorch",
+      "Computer Vision",
+      "NLP",
+      "Software Developer",
+      "Charter School of Wilmington",
+      "Activio",
+      "PiCode"
+    ],
+    "author": "Rohit Karthik",
+    "url": "https://rohitkarthik.com",
+    "ogImage": "/rohit_headshot.jpg",
+    "twitterHandle": "@Ninjagor"
   },
   "hero": {
     "name": "Rohit Karthik",
@@ -186,7 +208,7 @@
         "url": "https://www.linkedin.com/in/rohit-srinivas-karthik/"
       }
     ],
-    "finalCommand": "curl -X GET https://rohit.dev/api/contact"
+    "finalCommand": "curl -X GET https://rohitkarthik.com/api/contact"
   },
   "navigation": [
     { "id": "hero", "label": "Home" },
