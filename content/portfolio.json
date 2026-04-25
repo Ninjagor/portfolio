@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "title": "~/portfolio — Rohit Karthik",
+    "path": "~/portfolio",
+    "branch": "main"
+  },
+  "hero": {
+    "name": "Rohit Karthik",
+    "location": "Delaware",
+    "tagline": "ML Researcher · Entrepreneur · High School Student",
+    "bootLines": [
+      { "text": "Building ML inference systems", "status": "ok" },
+      { "text": "Founding EdTech startups", "status": "ok" },
+
+      { "text": "Session ready", "status": "ok" }
+    ],
+    "badges": [
+      { "text": "ML Research", "color": "green" },
+      { "text": "Deep Learning", "color": "cyan" },
+      { "text": "Entrepreneurship", "color": "amber" },
+      { "text": "Systems Design", "color": "purple" },
+      { "text": "Junior @ Charter School of Wilmington", "color": "default" }
+    ],
+    "image": {
+      "filename": "rohit.jpg",
+      "dimensions": "256×256"
+    }
+  },
+  "about": {
+    "filename": "about.md",
+    "paragraphs": [
+      "Hey. I'm <span class=\"cat-highlight\">Rohit Karthik</span>, and I'm into machine learning research, full stack software development, and innovative entrepreneurship.",
+      "Currently a <span class=\"cat-highlight\">Junior at the Charter School of Wilmington</span> while running <a href=\"#\" class=\"cat-link\">Activio</a>, an EdTech startup building efficient ml-assisted scheduling and rostering for high school flex periods, and <a href=\"#\" class=\"cat-link\">PiCode</a>, a nonprofit EdTech startup pioneering collaborative coding environments for classroom usage.",
+      "",
+      "Outside of coding: volleyball and basketball."
+    ],
+    "meta": {
+      "location": "Delaware",
+      "education": "Junior, Charter School of Wilmington",
+      "languages": "Typescript · Python · C · Rust"
+    }
+  },
+  "skills": {
+    "comment": "production usage + research depth",
+    "categories": [
+      {
+        "title": "Languages",
+        "color": "cyan",
+        "skills": [
+          { "name": "TypeScript", "level": 99 },
+          { "name": "Python", "level": 98 },
+          { "name": "Java", "level": 95 },
+          { "name": "C", "level": 85 },
+          { "name": "Rust", "level": 80 }
+        ]
+      },
+      {
+        "title": "Machine Learning",
+        "color": "default",
+        "skills": [
+          { "name": "PyTorch", "level": 90 },
+          { "name": "MTL", "level": 90 },
+          { "name": "Computer Vision", "level": 80 },
+          { "name": "NLP", "level": 70 },
+          { "name": "RL", "level": 65 }
+        ]
+      },
+      
+      {
+        "title": "Tools",
+        "color": "purple",
+        "skills": [
+          { "name": "Vim", "level": 100 },
+          { "name": "Docker", "level": 90 },
+          { "name": "Arch", "level": 85 },
+          { "name": "CMake", "level": 75 },
+          { "name": "AWS", "level": 70 }
+        ]
+      },
+      {
+        "title": "Frameworks",
+        "color": "amber",
+        "skills": [
+          { "name": "NextJS", "level": 100 },
+          { "name": "React", "level": 100 },
+          { "name": "RN/Expo", "level": 90 },
+          { "name": "Svelte", "level": 75 }
+        ]
+      }
+    ]
+  },
+  "experience": [
+    {
+      "role": "Founder",
+      "organization": "Activio",
+      "date": "2025 – Present",
+      "description": "Founded Activio, a Flex Period rostering and scheduling software built to simplify the management of daily activity periods at schools. Activio is being used by 1,000+ students and 60+ staff at The Charter School of Wilmington. Currently expanding to other schools in Delaware."
+    },
+    {
+      "role": "Founder",
+      "organization": "PiCode Education",
+      "date": "2024 – Present",
+      "description": "Founded PiCode, a non-profit EdTech company providing an online collaborative coding platform for classroom use. Sole developer and designer of the platform, which has been adopted by The Charter School of Wilmington for its computer science curriculum. Over its first full school year, PiCode has facilitated 1,760+ student projects, 790+ assignment submissions, and 124,000+ lines of code written by students. The platform enables real-time collaboration, assignment management, and student progress tracking."
+    },
+    {
+      "role": "Machine Learning Research Paper - First Author",
+      "organization": "",
+      "date": "2025 – Present",
+      "description": "Machine learning paper with a preprint published, currently undergoing peer review at a top ML conference. The paper is a proposal for a new technique for optimizing multi-task learning. It improves performance gains by over 10% compared to SOTA models, and can be applied to many MTL tasks, including CV and medical imaging."
+    },
+    {
+      "role": "Chapter Vice President",
+      "organization": "Business Professionals of America",
+      "date": "2025 – Present",
+      "description": "Vice president of my school's BPA chapter, helped manage the chapter, which is one of the largest in Delaware (with over 180 members). Also competed in BPA at the national and state level for numerous categories (like Website Design, Java Programming, and Small Business Management), winning 2 national first place awards, 3 national top-10 awards, 6 state first place awards, and 4 state top-5 awards in 5 years of doing BPA."
+    },
+    {
+      "role": "Curriculum Creator and Student Teacher",
+      "organization": "Charter School of Wilmington",
+      "date": "2026 – Present",
+      "description": "Developed the curriculum for an introductory college-level machine learning class intended for usage at my high school (CSW). Currently registered to formally teach the class as a semester-class at my school in the following year."
+    },
+    {
+      "role": "Founder and Team Co-Lead",
+      "organization": "Hydroscan",
+      "date": "2025 – Present",
+      "description": "Created and led the 6-person team behind \"Hydroscan\", which is an innovative machine learning  powered water buoy deployed in rivers in order to live-sample and predict pollution and contamination flow in critical waterways. Currently in beta-testing prior to deployment."
+    },
+    {
+      "role": "Club President",
+      "organization": "School CS/SWE Club",
+      "date": "2025 – Present",
+      "description": "President and founder of my school's computer science and software engineering club. Created and presented CS related information every week, with over 30 students in attendance per session. Also organized and conducted school-wide hackathons for prizes."
+    },
+    {
+      "role": "Founder and Team Co-Lead",
+      "organization": "Phonovis",
+      "date": "2024 – Present",
+      "description": "Created and led the 8-person team behind \"Phonovis\", which is creating innovative AI-powered technology to help deaf individuals through haptics and STT. Led weekly meetings, coordinated pilot sessions with schools for the deaf, and engineered the product. Currently working on completing the alpha stage and moving to the beta-phase of product development."
+    }
+  ],
+  "research": [
+    {
+      "id": "[2026.02] TechRxiv",
+      "title": "Cross-Attention Gradient Transplantation (CAGT): Mitigating Gradient Conflict in Multi-Task Learning Through Cross-Blockwise Attention",
+      "venue": "",
+      "authors": "Rohit Karthik",
+      "abstract": "We propose Cross-Attention Gradient Transplantation (CAGT), which is a method that finds conflicting gradient components and replaces them using deterministic cosine similarity based cross-attention over gradient subblocks from other tasks. ",
+      "links": [
+        { "text": "TechRxiv", "url": "https://www.techrxiv.org/doi/full/10.36227/techrxiv.177031372.20321869/v1" },
+        { "text": "pdf", "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.177031372.20321869/v1" }
+      ]
+    }
+  ],
+  "awards": [
+    { "year": "2026", "name": "Research Category Award", "organization": "Delaware Valley Science Fair", "prize": "1st Place (CS)" },
+    { "year": "2026", "name": "Research Category Award", "organization": "New Castle County Science Fair", "prize": "1st Place" },
+    { "year": "2026", "name": "SFT Tech Innovation Award", "organization": "Samsung", "prize": "T-40 (Nationals)" },
+    { "year": "2025", "name": "Computer Programming", "organization": "BPA", "prize": "Top-5 (Nationals)" },
+    { "year": "2025", "name": "Java Programming Event", "organization": "BPA", "prize": "Top-10 (Nationals)" },
+    { "year": "2024", "name": "Web Development", "organization": "BPA", "prize": "1st Place (States)" },
+    { "year": "2025", "name": "AP Scholar", "organization": "College Board", "prize": "—" },
+    { "year": "2025", "name": "Hackathon Winner", "organization": "SalsHacks", "prize": "1st" },
+    { "year": "2024", "name": "Hackathon Winner", "organization": "DualHacks", "prize": "3rd/500" },
+    { "year": "2024", "name": "Hackathon Winner", "organization": "EducateHacks", "prize": "4th/1120" }
+  ],
+  "contact": {
+    "comment": "always open to research, collabs, and interesting problems",
+    "items": [
+      {
+        "icon": "✉",
+        "label": "email",
+        "value": "karthik.rohit09@gmail.com",
+        "url": "mailto:karthik.rohit09@gmail.com"
+      },
+      {
+        "icon": "◈",
+        "label": "github",
+        "value": "github.com/Ninjagor",
+        "url": "https://github.com/Ninjagor"
+      },
+      {
+        "icon": "◉",
+        "label": "linkedin",
+        "value": "linkedin.com/in/rohit-srinivas-karthik/",
+        "url": "https://www.linkedin.com/in/rohit-srinivas-karthik/"
+      }
+    ],
+    "finalCommand": "curl -X GET https://rohit.dev/api/contact"
+  },
+  "navigation": [
+    { "id": "hero", "label": "Home" },
+    { "id": "about", "label": "About" },
+    { "id": "skills", "label": "Skills" },
+    { "id": "experience", "label": "Experience" },
+    { "id": "research", "label": "Research" },
+    { "id": "awards", "label": "Awards" },
+    { "id": "contact", "label": "Contact" }
+  ]
+}
