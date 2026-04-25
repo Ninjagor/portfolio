@@ -10,6 +10,7 @@ interface TopBarProps {
 
 export default function TopBar({ activeSection, onSectionChange }: TopBarProps) {
   const [time, setTime] = useState('');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const updateTime = () => {
@@ -26,6 +27,12 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
     const interval = setInterval(updateTime, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleNavClick = (navId: string) => {
+    onSectionChange(navId);
+    document.getElementById(navId)?.scrollIntoView({ behavior: 'smooth' });
+    setMobileMenuOpen(false);
+  };
 
   return (
     <>
@@ -44,8 +51,7 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
                 className={activeSection === nav.id ? 'active' : ''}
                 onClick={(e) => {
                   e.preventDefault();
-                  onSectionChange(nav.id);
-                  document.getElementById(nav.id)?.scrollIntoView({ behavior: 'smooth' });
+                  handleNavClick(nav.id);
                 }}
               >
                 {nav.label}
@@ -54,27 +60,48 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
           ))}
         </nav>
         <div className="tb-right">
+          <button 
+            className="hamburger-btn"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+            <span className={`hamburger-line ${mobileMenuOpen ? 'open' : ''}`}></span>
+          </button>
           <span className="online-dot"></span>
-          <span style={{ color: 'var(--fg-dim)' }}>available</span>
           <span className="tb-time">{time}</span>
         </div>
       </div>
 
-      <div id="mobile-nav">
-        {portfolioData.navigation.map((nav) => (
-          <a
-            key={nav.id}
-            href={`#${nav.id}`}
-            className={activeSection === nav.id ? 'active' : ''}
-            onClick={(e) => {
-              e.preventDefault();
-              onSectionChange(nav.id);
-              document.getElementById(nav.id)?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            {nav.label}
-          </a>
-        ))}
+      <div className={`mobile-menu-overlay ${mobileMenuOpen ? 'open' : ''}`} onClick={() => setMobileMenuOpen(false)}>
+        <div className="mobile-menu-content" onClick={(e) => e.stopPropagation()}>
+          <div className="mobile-menu-header">
+            <span className="tb-path">{portfolioData.meta.path}</span>
+            <button 
+              className="close-btn"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              ✕
+            </button>
+          </div>
+          <nav className="mobile-nav-links">
+            {portfolioData.navigation.map((nav) => (
+              <a
+                key={nav.id}
+                href={`#${nav.id}`}
+                className={activeSection === nav.id ? 'active' : ''}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(nav.id);
+                }}
+              >
+                {nav.label}
+              </a>
+            ))}
+          </nav>
+        </div>
       </div>
     </>
   );
