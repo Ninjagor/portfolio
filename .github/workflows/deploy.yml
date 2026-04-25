@@ -30,8 +30,8 @@ jobs:
       # - name: Build (includes static export)
       #   run: npm run build
       - name: Build (includes static export)
-        env:
-          NEXT_PUBLIC_BASE_PATH: /portfolio
+        # env:
+        #   NEXT_PUBLIC_BASE_PATH: /portfolio
         run: npm run build
 
       - name: Add .nojekyll

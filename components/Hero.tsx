@@ -79,7 +79,8 @@ export default function Hero() {
                         </div>
                         <div className="hero-img-placeholder">
                             <img
-                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/rohit_headshot.jpg`}
+                                // src={`${process.env.NEXT_PUBLIC_BASE_PATH}/rohit_headshot.jpg`}
+                                src={`/rohit_headshot.jpg`}
                                 alt={portfolioData.hero.name}
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
