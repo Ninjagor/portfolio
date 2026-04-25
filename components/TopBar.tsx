@@ -28,9 +28,18 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
     return () => clearInterval(interval);
   }, []);
 
-  const handleNavClick = (navId: string) => {
-    onSectionChange(navId);
-    document.getElementById(navId)?.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (navId: string, url?: string) => {
+    if (url) {
+      window.location.href = url;
+    } else {
+      const isNotHomePage = window.location.pathname !== '/';
+      if (isNotHomePage) {
+        window.location.href = `/#${navId}`;
+      } else {
+        onSectionChange(navId);
+        document.getElementById(navId)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
     setMobileMenuOpen(false);
   };
 
@@ -47,11 +56,13 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
             <span key={nav.id}>
               {index > 0 && <span className="sep">·</span>}
               <a
-                href={`#${nav.id}`}
+                href={(nav as any).url || `#${nav.id}`}
                 className={activeSection === nav.id ? 'active' : ''}
                 onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(nav.id);
+                  if (!(nav as any).url) {
+                    e.preventDefault();
+                    handleNavClick(nav.id);
+                  }
                 }}
               >
                 {nav.label}
@@ -90,11 +101,13 @@ export default function TopBar({ activeSection, onSectionChange }: TopBarProps) 
             {portfolioData.navigation.map((nav) => (
               <a
                 key={nav.id}
-                href={`#${nav.id}`}
+                href={(nav as any).url || `#${nav.id}`}
                 className={activeSection === nav.id ? 'active' : ''}
                 onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(nav.id);
+                  if (!(nav as any).url) {
+                    e.preventDefault();
+                    handleNavClick(nav.id);
+                  }
                 }}
               >
                 {nav.label}

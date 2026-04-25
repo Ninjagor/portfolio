@@ -655,6 +655,12 @@ body::before {
   border-width: 0;
 }
 
+/* ── BLOG POST CARD ── */
+.blog-post-card:hover {
+  border-color: var(--green);
+  background: var(--green-dim);
+}
+
 /* ── DIFF LINE NUMBERS ── */
 .line-num {
   display: inline-block;

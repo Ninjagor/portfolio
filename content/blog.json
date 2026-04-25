@@ -1,0 +1,113 @@
+{
+  "posts": [
+    {
+      "id": "activio-launch",
+      "title": "Building Activio: Streamlining School Flex Periods with ML",
+      "slug": "building-activio",
+      "description": "How I built Activio, an ML-powered scheduling platform now serving 1,000+ students at my high school, and the lessons learned along the way.",
+      "date": "2026-04-25",
+      "author": "Rohit Karthik",
+      "tags": ["EdTech", "Product Development", "Machine Learning", "Entrepreneurship"],
+      "bannerImage": "/activio-banner.png",
+      "readTime": "6 min",
+      "content": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Problem: Flex Period Chaos"
+        },
+        {
+          "type": "paragraph",
+          "text": "At my high school, The Charter School of Wilmington, we have a 40-minute \"activity period\" every day where students can choose from various activities, clubs, and more. The concept was amazing, but the scheduling and administrative work behind it proved to be a headache. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Students spent 15+ minutes just finding available activities. Teachers were overwhelmed with manual sign-up sheets. The administration had limited visibility into attendance or participation rates. The system was broken, and I decided to fix it."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Solution: Activio"
+        },
+        {
+          "type": "paragraph",
+          "text": "Activio is a comprehensive flex period management platform built to streamline scheduling, rostering, and attendance tracking. The core idea was simple: make it easy for students to discover and sign up for activities, while giving administrators the tools they need to manage the system effectively."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical Architecture"
+        },
+        {
+          "type": "paragraph",
+          "text": "I built Activio using a modern tech stack optimized for reliability and performance:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "- Frontend: Next.js 16 with React 19 for a responsive, fast user experience",
+            "- Backend: HonoJS with MySQL for robust data management",
+            "- Authentication: JWT-based secure login for students and staff",
+            "- ML Components: Smart recommendations based on student preferences and history"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key Features"
+        },
+        {
+          "type": "paragraph",
+          "text": "Activio includes several features that set it apart from traditional scheduling systems:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "- Real time availability: Students can see which activities have open spots instantly",
+            "- Smart recommendations: ML-powered suggestions and auto-assignments based on past choices and interests",
+            "- Mobile first design: Works seamlessly on phones, tablets, and desktops",
+            "- Teacher dashboard: Easy roster management and attendance tracking",
+            "- Analytics: Insights into attendance trends and more."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Impact and Growth"
+        },
+        {
+          "type": "paragraph",
+          "text": "Since launching at my school, Activio has made a significant impact:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "- 1,000+ students using the platform daily",
+            "- 60+ staff members managing their activities through the system",
+            "- Huge reduction in time spent on manual scheduling",
+            "- 92% student satisfaction rate according to surveys",
+            "- Expansion to additional schools in Delaware in progress"
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "Activio transformed our flex period into an organized, engaging experience for students and manageable for teachers.",
+          "attribution": ""
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What's Next"
+        },
+        {
+          "type": "paragraph",
+          "text": "I'm currently working on expanding Activio to other schools in Delaware and adding more advanced ML features like predictive attendance modeling and automated activity suggestions based on student interests and academic performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you're interested in learning more about Activio or bringing it to your school, please visit <a href=\"https://www.activioapp.com/\" class=\"cat-link\">activioapp.com</a>."
+        }
+      ]
+    }
+  ]
+}

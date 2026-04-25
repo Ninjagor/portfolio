@@ -5,6 +5,7 @@ import portfolioData from '@/content/portfolio.json';
 export default function Experience() {
   return (
     <section id="experience" className="section reveal">
+      <h2 className="sr-only">Experience</h2>
       <div className="cmd-line">
         <span className="prompt-user">rohit</span>
         <span className="prompt-at">@</span>
@@ -15,7 +16,6 @@ export default function Experience() {
         <span className="prompt-arg">experience.md</span>
       </div>
       <div className="output">
-        <h2 style={{ color: 'var(--green)', marginBottom: '24px' }}>Experience</h2>
         {(portfolioData.experience as any[]).map((exp: any, index: number) => (
           <div key={index} style={{ marginBottom: '32px' }}>
             <div style={{ fontSize: '16px', fontWeight: 'bold', color: 'var(--fg)' }}>
@@ -32,6 +32,26 @@ export default function Experience() {
             <div style={{ fontSize: '13px', color: 'var(--fg-mid)', marginTop: '8px', lineHeight: '1.6' }}>
               {exp.description}
             </div>
+            {exp.blogPostSlug && (
+              <div style={{ marginTop: '12px' }}>
+                <a
+                  href={`/blog/${exp.blogPostSlug}`}
+                  style={{
+                    display: 'inline-block',
+                    padding: '4px 12px',
+                    border: '1px solid var(--green)',
+                    color: 'var(--green)',
+                    background: 'var(--green-dim)',
+                    textDecoration: 'none',
+                    fontSize: '11px',
+                    borderRadius: '2px',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  Read Blog Post →
+                </a>
+              </div>
+            )}
           </div>
         ))}
       </div>

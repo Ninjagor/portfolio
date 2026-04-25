@@ -116,7 +116,8 @@
       "role": "Founder",
       "organization": "Activio",
       "date": "2025 – Present",
-      "description": "Founded Activio, a Flex Period rostering and scheduling software built to simplify the management of daily activity periods at schools. Activio is being used by 1,000+ students and 60+ staff at The Charter School of Wilmington. Currently expanding to other schools in Delaware."
+      "description": "Founded Activio, a Flex Period rostering and scheduling software built to simplify the management of daily activity periods at schools. Activio is being used by 1,000+ students and 60+ staff at The Charter School of Wilmington. Currently expanding to other schools in Delaware.",
+      "blogPostSlug": "building-activio"
     },
     {
       "role": "Founder",
@@ -217,6 +218,7 @@
     { "id": "experience", "label": "Experience" },
     { "id": "research", "label": "Research" },
     { "id": "awards", "label": "Awards" },
+    { "id": "blog", "label": "Blog", "url": "/blog" },
     { "id": "contact", "label": "Contact" }
   ]
 }
