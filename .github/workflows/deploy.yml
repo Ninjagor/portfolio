@@ -3,6 +3,7 @@ name: Deploy Next.js to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,16 +22,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
 
-      - name: Build
+      - name: Build (includes static export)
         run: npm run build
 
-      - name: Export
-        run: npx next export
+      - name: Add .nojekyll
+        run: touch ./out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -38,14 +39,14 @@ jobs:
           path: ./out
 
   deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    needs: build
-    runs-on: ubuntu-latest
-
     steps:
-      - name: Deploy to Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
