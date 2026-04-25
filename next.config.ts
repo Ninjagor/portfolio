@@ -10,4 +10,5 @@ const nextConfig: NextConfig = {
     assetPrefix: '/portfolio/'
 };
 
+
 export default nextConfig;
