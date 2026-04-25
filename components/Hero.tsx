@@ -1,7 +1,6 @@
 'use client';
 
 import portfolioData from '@/content/portfolio.json';
-import { useRouter } from 'next/router';
 
 const ASCII_ART = ` ██████╗  ██████╗ ██╗  ██╗██╗████████╗
  ██╔══██╗██╔═══██╗██║  ██║██║╚══██╔══╝
@@ -18,7 +17,6 @@ const ASCII_ART = ` ██████╗  ██████╗ ██╗  █�
  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝`;
 
 export default function Hero() {
-    const { basePath } = useRouter();
     return (
         <section id="hero">
             <div className="hero-inner">
@@ -81,7 +79,7 @@ export default function Hero() {
                         </div>
                         <div className="hero-img-placeholder">
                             <img
-                                src={`${basePath}/rohit_headshot.jpg`}
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/rohit_headshot.jpg`}
                                 alt={portfolioData.hero.name}
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
