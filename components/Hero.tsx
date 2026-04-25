@@ -19,6 +19,7 @@ const ASCII_ART = ` ██████╗  ██████╗ ██╗  █�
 export default function Hero() {
     return (
         <section id="hero">
+            <h1 className="sr-only">{portfolioData.hero.name}</h1>
             <div className="hero-inner">
                 <div className="hero-text-col">
                     <div id="boot-seq">

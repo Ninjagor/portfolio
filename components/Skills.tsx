@@ -6,6 +6,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="section">
+      <h2 className="sr-only">Skills</h2>
       <div className="cmd-line">
         <span className="prompt-user">rohit</span>
         <span className="prompt-at">@</span>

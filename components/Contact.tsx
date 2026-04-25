@@ -62,6 +62,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="section reveal" ref={contactRef}>
+      <h2 className="sr-only">Contact</h2>
       <div className="cmd-line">
         <span className="prompt-user">rohit</span>
         <span className="prompt-at">@</span>

@@ -5,6 +5,7 @@ import portfolioData from '@/content/portfolio.json';
 export default function Research() {
   return (
     <section id="research" className="section reveal">
+      <h2 className="sr-only">Research</h2>
       <div className="cmd-line">
         <span className="prompt-user">rohit</span>
         <span className="prompt-at">@</span>
