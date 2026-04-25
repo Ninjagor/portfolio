@@ -52,7 +52,7 @@
     "filename": "about.md",
     "paragraphs": [
       "Hey. I'm <span class=\"cat-highlight\">Rohit Karthik</span>, and I'm into machine learning research, full stack software development, and innovative entrepreneurship.",
-      "Currently a <span class=\"cat-highlight\">Junior at the Charter School of Wilmington</span> while running <a href=\"#\" class=\"cat-link\">Activio</a>, an EdTech startup building efficient ml-assisted scheduling and rostering for high school flex periods, and <a href=\"#\" class=\"cat-link\">PiCode</a>, a nonprofit EdTech startup pioneering collaborative coding environments for classroom usage.",
+      "Currently a <span class=\"cat-highlight\">Junior at the Charter School of Wilmington</span> while running <a href=\"https://www.activioapp.com/\" class=\"cat-link\">Activio</a>, an EdTech startup building efficient ml-assisted scheduling and rostering for high school flex periods, and <a href=\"https://picode.education/\" class=\"cat-link\">PiCode</a>, a nonprofit EdTech startup pioneering collaborative coding environments for classroom usage.",
       "",
       "Outside of coding: volleyball and basketball."
     ],
